@@ -190,9 +190,10 @@ h2[class*="container"] [class*="name"],
 [aria-label*="category" i] [class*="name"],
 .containerDefault-3tr_sE > .iconVisibility-vptKma .name-3l27Hl {
     color: var(--crimson-primary) !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-size: 12px !important;
 }
 
 [class*="containerDefault"] > [class*="iconVisibility"] > [class*="icon"],
