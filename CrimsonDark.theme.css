@@ -27,11 +27,11 @@
     --background-modifier-selected: rgba(255, 10, 10, 0.2);
     --background-modifier-accent: rgba(255, 255, 255, 0.06);
     
-    --text-normal: #e0e0e0;
-    --text-muted: #6b6b6b;
+    --text-normal: #ff0000;
+    --text-muted: #534d4d;
     --text-link: var(--crimson-light);
     --header-primary: #ffffff;
-    --header-secondary: #b0b0b0;
+    --header-secondary: #ffffff;
     --interactive-normal: #b0b0b0;
     --interactive-hover: #e0e0e0;
     --interactive-active: #ffffff;
@@ -156,6 +156,8 @@ a:hover {
 [class*="mentionsBadge"] {
     background-color: var(--crimson-primary) !important;
     color: #ffffff !important;
+    border-radius: 50% !important;
+
 }
 
 [class*="avatar"]:hover {
@@ -178,7 +180,6 @@ a:hover {
 }
 [class*="embedFull"] {
     background-color: #0a0a0a !important;
-    border-left-color: var(--crimson-primary) !important;
 }
 
 [class*="rtcConnectionStatus"][class*="connected"] {
@@ -205,8 +206,7 @@ h2[class*="membersGroup"],
 [class*="membersGroup"] {
     color: var(--crimson-primary) !important;
     font-weight: 600 !important;
-    font-size: 12px !important;
-    text-transform: uppercase;
+    font-size: 13px !important;
     letter-spacing: 0.02em;
     padding-top: 8px !important;
     padding-bottom: 4px !important;
@@ -243,25 +243,15 @@ h2[class*="membersGroup"] span,
 [class*="name"][class*="overflow"] {
     text-decoration: none !important;
 }
-
-[class*="member"] [class*="username"],
-[class*="member"] [class*="name"],
-[class*="memberInner"] [class*="name"] {
-    color: #ffffff !important;
-}
-
 [class*="member"][class*="offline"] [class*="username"],
 [class*="member"][class*="offline"] [class*="name"],
 [class*="memberOffline"] [class*="name"] {
     color: #6b6b6b !important;
 }
-
-[class*="username"],
-[class*="header"] [class*="username"],
-[class*="message"] [class*="username"],
-[class*="headerText"] [class*="username"],
-[class*="repliedMessage"] [class*="username"] {
-    color: #ffffff !important;
+[class*="member"][class*="muted"] [class*="username"],
+[class*="member"][class*="muted"] [class*="name"] {
+    color: #6b6b6b !important;
+    opacity: 0.6 !important;
 }
 
 [class*="privateChannels"] [class*="name"],
@@ -270,7 +260,6 @@ h2[class*="membersGroup"] span,
 [class*="directMessage"] [class*="name"] {
     color: #ffffff !important;
 }
-
 [class*="guildSeparator"],
 [class*="listItem"]:hover [class*="wrapper"],
 [class*="listItem"] [class*="wrapper"] {
@@ -318,4 +307,18 @@ h1[class*="label"],
 [class*="sectionLabel"] h1,
 [class*="sectionLabel"] [class*="label"] {
     color: #ff0a0a !important;
+}
+[class*="embedFull"] [class*="embedDescription"],
+[class*="embedFull"] [class*="embedTitle"],
+[class*="embedFull"] [class*="embedFieldValue"],
+[class*="embedFull"] [class*="embedFieldName"],
+[class*="embedFull"] [class*="embedAuthorName"] {
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+}
+[class*="privateChannels"] [class*="nameAndDecorators"] * {
+    color: #ffffffd7 !important;
+}
+[class*="privateChannels"] [class*="muted"] [class*="nameAndDecorators"] * {
+    color: #6b6b6b !important;
 }
