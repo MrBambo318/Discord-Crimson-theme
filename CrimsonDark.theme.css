@@ -323,9 +323,51 @@ h1[class*="label"],
 [class*="lookFilled"][class*="colorBrand"] {
     box-shadow: 0 0 10px var(--crimson-glow) !important;
 }
-[class*="channel"]:hover [class*="name"], 
-a:hover {
-    text-shadow: 0 0 8px var(--crimson-light);
+[class*="link"][class*="channel"]:hover [class*="name"],
+[class*="link"][class*="channel"][class*="selected"] [class*="name"],
+[class*="link"][class*="channel"][class*="modeSelected"] [class*="name"],
+a[class*="channel"]:hover [class*="name"],
+a[class*="channel"][class*="selected"] [class*="name"] {
+    text-shadow: 0 0 8px var(--crimson-light) !important;
+    color: var(--crimson-light) !important;
+}
+[class*="member"]:hover [class*="username"],
+[class*="member"]:hover [class*="name"],
+[class*="member"][class*="selected"] [class*="username"],
+[class*="member"][class*="selected"] [class*="name"],
+[class*="member"][aria-selected="true"] [class*="username"],
+[class*="member"][aria-selected="true"] [class*="name"] {
+    text-shadow: 0 0 8px var(--crimson-light) !important;
+}
+[class*="privateChannels"] [class*="interactive"]:hover,
+[class*="privateChannels"] [class*="interactive"][class*="selected"],
+[class*="privateChannels"] [class*="interactive"][class*="modeSelected"] {
+    text-shadow: 0 0 8px var(--crimson-light) !important;
+}
+[data-list-item-id*="channels"] [class*="name"]:hover,
+[class*="containerDefault"] [class*="link"]:hover [class*="name"],
+[class*="containerDefault"] [class*="link"][class*="selected"] [class*="name"],
+[class*="containerDefault"] [class*="link"][class*="modeSelected"] [class*="name"] {
+    text-shadow: 0 0 8px var(--crimson-light) !important;
+}
+[data-list-item-id*="channels"] [class*="name"]:hover,
+[class*="containerDefault"] [class*="link"]:hover [class*="name"],
+[class*="containerDefault"] [class*="link"][class*="selected"] [class*="name"],
+[class*="containerDefault"] [class*="link"][class*="modeSelected"] [class*="name"] {
+    text-shadow: 0 0 8px var(--crimson-light) !important;
+}
+[class*="containerDefault"] [class*="mainContent"]:hover [class*="name"],
+[class*="containerDefault"] [class*="iconVisibility"][class*="selected"] [class*="name"] {
+    text-shadow: 0 0 8px var(--crimson-light) !important;
+}
+[class*="containerDefault"] [class*="mainContent"]:hover [class*="name"],
+[class*="containerDefault"] [class*="iconVisibility"][class*="selected"] [class*="name"] {
+    text-shadow: 0 0 8px var(--crimson-light) !important;
+}
+[class*="privateChannels"] [class*="interactive"]:hover [class*="name"],
+[class*="privateChannels"] [class*="interactive"][class*="selected"] [class*="name"],
+[class*="privateChannels"] [class*="interactive"][class*="modeSelected"] [class*="name"] {
+    text-shadow: 0 0 8px var(--crimson-light) !important;
 }
 [class*="childWrapper"] svg path {
     fill: var(--crimson-primary) !important;
