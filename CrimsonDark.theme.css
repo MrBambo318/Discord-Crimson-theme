@@ -9,10 +9,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --crimson-primary: #ff00009d;
+    --crimson-primary: #ff0000a2;
     --crimson-hover: #cc0000;
     --crimson-light: #ff4d4d;
-    --crimson-glow: rgba(255, 10, 10, 0.6);
     
     --background-primary: #000000;
     --background-secondary: #0a0a0a;
@@ -319,4 +318,47 @@ h1[class*="label"],
 }
 [class*="privateChannels"] [class*="muted"] [class*="nameAndDecorators"] * {
     color: #6b6b6b !important;
+}
+[class*="sidebar"] [class*="item"][class*="selected"],
+[class*="lookFilled"][class*="colorBrand"] {
+    box-shadow: 0 0 10px var(--crimson-glow) !important;
+}
+[class*="channel"]:hover [class*="name"], 
+a:hover {
+    text-shadow: 0 0 8px var(--crimson-light);
+}
+[class*="childWrapper"] svg path {
+    fill: var(--crimson-primary) !important;
+}
+[class*="channelTextArea"] [class*="scrollableContainer"] {
+    border-bottom: 2px solid transparent !important;
+    transition: border-color 0.3s ease;
+}
+[class*="channelTextArea"]:focus-within [class*="scrollableContainer"] {
+    border-bottom: 2px solid var(--crimson-primary) !important;
+}
+@keyframes crimson-pulse {
+    0% { box-shadow: 0 0 0 0 var(--crimson-primary); }
+    70% { box-shadow: 0 0 0 6px rgba(255, 0, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+[class*="numberBadge"],
+[class*="mentionsBadge"] {
+    animation: crimson-pulse 2s infinite;
+}
+[class*="panels"] {
+    border: 1px solid var(--crimson-primary) !important;
+    border-radius: 6px !important;
+    margin: 4px !important;
+    box-shadow: 0 0 8px rgba(255, 10, 10, 0.15) !important;
+    background: rgba(10, 10, 10, 0.95) !important;
+}
+[class*="panels"] button:hover {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    color: white !important;
+}
+[class*="tutorialContainer"] [class*="wrapper"]:hover [class*="childWrapper"] svg {
+    transform: rotate(360deg);
+    transition: transform 0.6s ease-in-out;
 }
