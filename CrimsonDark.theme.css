@@ -418,5 +418,11 @@ a[class*="channel"][class*="selected"] [class*="name"] {
 }
 [class*="mentioned"]::before {
     background-color: rgb(255, 255, 255) !important;
-    width: 3px !important; */
+    width: 3px !important;
+}
+body {
+    background-image: var(--background-image) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
 }
