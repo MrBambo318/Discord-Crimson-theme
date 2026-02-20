@@ -420,9 +420,3 @@ a[class*="channel"][class*="selected"] [class*="name"] {
     background-color: rgb(255, 255, 255) !important;
     width: 3px !important;
 }
-body {
-    background-image: var(--background-image) !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-attachment: fixed !important;
-}
