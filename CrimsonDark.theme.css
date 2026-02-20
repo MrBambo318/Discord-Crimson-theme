@@ -97,10 +97,14 @@ a:hover {
     background-color: rgba(255, 10, 10, 0.08) !important;
     border-left: 2px solid var(--crimson-primary) !important;
 }
-
-[class*="reaction"]:hover {
-    background-color: rgba(255, 10, 10, 0.2) !important;
+[class*="reaction"]:not([class*="reactions"]):not([class*="reactionCount"]):hover {
+    background-color: rgba(255, 10, 10, 0.15) !important;
     border-color: var(--crimson-primary) !important;
+    border-radius: 6px !important;
+}
+[class*="reactions"]:hover {
+    background-color: transparent !important;
+    border-color: transparent !important;
 }
 [class*="searchBar"] {
     background-color: #0a0a0a !important;
@@ -235,17 +239,19 @@ h2[class*="membersGroup"] span,
 [class*="name"][class*="overflow"] {
     text-decoration: none !important;
 }
-[class*="member"][class*="offline"] [class*="username"],
-[class*="member"][class*="offline"] [class*="name"],
-[class*="memberOffline"] [class*="name"] {
-    color: #6b6b6b !important;
-}
+
 [class*="member"][class*="muted"] [class*="username"],
 [class*="member"][class*="muted"] [class*="name"] {
     color: #6b6b6b !important;
     opacity: 0.6 !important;
 }
+[class*="member"][class*="offline"] {
+    opacity: 0.5 !important;
+}
 
+[class*="member"][class*="offline"]:hover {
+    opacity: 1 !important;
+}
 [class*="privateChannels"] [class*="name"],
 [class*="channel"][class*="private"] [class*="name"],
 [class*="dmChannel"] [class*="name"],
