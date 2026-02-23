@@ -353,3 +353,53 @@ div[class*="layerContainer"] [class*="menu"][role="menu"] {
     border-radius: 12px !important;
     background: rgba(10, 10, 10, 0.95) !important;
 }
+
+[class*="accountProfilePopout"] *,
+[class*="userPopout"] *,
+[class*="menu"] * {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+[class*="menu"] [class*="item"] {
+    border-radius: 8px !important;
+    margin: 2px 0 !important;
+}
+[class*="menu"] [class*="item"]:hover { background: rgba(255, 0, 0, 0.15) !important; }
+[class*="menu"] [class*="item"][class*="danger"] { color: var(--crimson-light) !important; }
+
+[class*="account"] [class*="inner"] > div { border: none !important; }
+[class*="account"] [class*="inner"] > div:last-child > div:has([class*="edit"]),
+[class*="account"] [class*="inner"] > div:last-child > div:has([class*="item"]),
+[class*="account"] [class*="inner"] > div:last-child > div:has([class*="menu"]) {
+    border: 1px solid var(--crimson-primary) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3) !important;
+}
+[class*="account"] [class*="inner"] > div:last-child > div:has([class*="badge"]),
+[class*="account"] [class*="inner"] > div:last-child > div:has([class*="bio"]),
+[class*="account"] [class*="inner"] > div:last-child > div:has([class*="link"]),
+[class*="account"] [class*="inner"] > div:last-child > div:has([class*="nick"]),
+[class*="account"] [class*="inner"] > div:last-child > div:has([class*="name"]) {
+    border: none !important;
+    box-shadow: none !important;
+}
+[class*="account"] [class*="inner"] [class*="divider"],
+[class*="account"] [class*="inner"] [class*="separator"] {
+    background: transparent !important;
+    margin: 2px 0 !important;
+}
+[class*="accountProfilePopout"] { background: rgba(10, 10, 10, 0.95) !important; }
+
+@keyframes crimson-pulse {
+    0% { box-shadow: 0 0 0 0 var(--crimson-primary); }
+    70% { box-shadow: 0 0 0 6px rgba(255, 0, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+@keyframes gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
