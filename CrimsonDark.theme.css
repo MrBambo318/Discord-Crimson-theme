@@ -403,3 +403,16 @@ div[class*="layerContainer"] [class*="menu"][role="menu"] {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+[class*="membersGroup"] span {
+    vertical-align: baseline !important;
+}
+
+[class*="link"][class*="channel"][class*="selected"] [class*="name"],
+[class*="link"][class*="channel"][class*="modeSelected"] [class*="name"],
+a[class*="channel"][class*="selected"] [class*="name"],
+[class*="containerDefault"] [class*="link"][class*="selected"] [class*="name"],
+[class*="containerDefault"] [class*="link"][class*="modeSelected"] [class*="name"],
+[class*="containerDefault"] [class*="iconVisibility"][class*="selected"] [class*="name"] {
+    text-shadow: 0 0 8px var(--crimson-light) !important;
+    color: var(--crimson-light) !important;
+}
