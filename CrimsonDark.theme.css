@@ -13,6 +13,7 @@
     --crimson-hover: #cc0000;
     --crimson-light: #ff0000;
     --crimson-glow: rgb(255, 255, 255);
+    --crimson-lajt: #000000;
     --background-primary: #000000;
     --background-secondary: #0a0a0a;
     --background-secondary-alt: #0f0f0f;
@@ -70,7 +71,7 @@ a:hover { text-decoration: underline !important; }
 [class*="lookFilled"][class*="colorBrand"],
 [class*="lookFilled"][class*="colorGreen"] {
     background-color: var(--crimson-primary) !important;
-    box-shadow: 0 0 10px var(--crimson-glow) !important;
+    box-shadow: 0 0 10px var(--crimson-lajt) !important;
 }
 
 [class*="lookFilled"][class*="colorBrand"]:hover,
